@@ -1,5 +1,12 @@
 import {select, className} from './settings.js';
 
+function addClickListenersToMenu() {
+  const menuItems = document.querySelectorAll(select.listOf.menuItem);
+  for (let item of menuItems) {
+    item.addEventListener('click', activeClass);
+  }
+}
+
 function activeClass(event) {
   event.preventDefault();
   const clickedElement = event.target;
@@ -40,14 +47,6 @@ function activeClass(event) {
   }
 
   splash.classList.add(background);
-}
-
-function addClickListenersToMenu() {
-
-  const menuItems = document.querySelectorAll(select.listOf.menuItem);
-  for (let item of menuItems) {
-    item.addEventListener('click', activeClass);
-  }
 }
 
 addClickListenersToMenu();
