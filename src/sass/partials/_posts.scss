@@ -1,0 +1,134 @@
+// Product
+
+.card {
+  margin: 5px 0;
+}
+
+.card_margin {
+  margin: 5px 0.5%;
+}
+
+.image {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    transition: all 1s;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $color-form;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  &:hover {
+    img {
+      transform: scale(2);
+    }
+
+    &::before {
+      z-index: 2;
+    }
+  }
+}
+
+// Order
+
+.order {
+  background-color: $color-alternative;
+  color: $color-basic;
+}
+
+.order_margin {
+  margin: 0 0.5%;
+}
+
+.order_icon {
+  margin-bottom: 15px;
+  font-size: 34px;
+}
+
+// Contact
+
+.data {
+  background-color: $color-alternative;
+
+  span {
+    color: $color-title;
+  }
+}
+
+.data_description {
+  color: $color-basic;
+  padding: 50px 20px 0 30px;
+  font-size: 20px;
+}
+
+.map {
+  width: 90%;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  padding: 0 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color-title;
+}
+
+input {
+  margin: 5px 0 15px 20px;
+  padding: 5px;
+  width: 90%;
+  font-size: 12px;
+
+  &:focus {
+    border: 2px solid $color-title;
+  }
+}
+
+textarea {
+  margin: 5px 20px;
+  padding: 5px;
+  width: 95%;
+  height: 100px;
+
+  &:focus {
+    border: 2px solid $color-title;
+  }
+}
+
+button {
+  border-radius: 10px;
+  border: 2px solid $color-title;
+  margin: 10px 0 30px 20px;
+  width: 180px;
+  height: 40px;
+  background-color: $color-basic;
+  color: $color-title;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s;
+
+  &:hover {
+    background: $color-title;
+    color: $color-basic;
+  }
+}
+
+.required {
+  color: $color-form;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0 0 0 20px;
+}

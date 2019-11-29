@@ -1,0 +1,160 @@
+// Navigation
+
+.logo_menu {
+  background: $color-menu;
+  position: relative;
+  height: 100px;
+}
+
+.logo {
+  @include center_tier;
+  margin-top: 20px;
+  height: 300px;
+  width: 300px;
+  border: 3px solid $color-title;
+  border-radius: 50%;
+  background: $color-logo;
+}
+
+.page_title {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: $font-storke;
+  font-size: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: $color-basic;
+  letter-spacing: 3px;
+}
+
+.stroke {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    content: attr(content);
+    -webkit-text-stroke: 4px $color-title;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.page_subtitle {
+  @include center_tier;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: $font-header;
+}
+
+.up {
+  top: 15%;
+}
+
+.down {
+  top: 75%;
+}
+
+.nav_menu {
+  height: 310px;
+}
+
+.list_menu {
+  padding-top: 250px;
+}
+
+.menu_item a {
+  position: relative;
+  color: $color-title;
+  font-size: 28px;
+  font-weight: 700;
+
+  &:hover::after {
+    @include center_tier;
+    @include after_link;
+  }
+
+  &.active::after {
+    @include center_tier;
+    @include after_link;
+  }
+}
+
+// Splash
+
+.splash_one {
+  background: url("../images/header_background_optimized.jpg");
+  background-position: center bottom;
+}
+
+.splash_two {
+  background: url("../images/header_background_2_optimized.jpg");
+  background-position: center bottom;
+}
+
+.splash_three {
+  background: url("../images/header_background_3_optimized.jpg");
+  background-position: center center;
+}
+
+.splash_image {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.splash_image h2 {
+  font-family: $font-storke;
+  text-transform: uppercase;
+  font-size: 55px;
+  color: $color-basic;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.splash_image h2:first-child {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.stroke_two,
+.stroke_three {
+  position: relative;
+  z-index: 0;
+  
+  &::before {
+    position: absolute;
+    content: attr(content);
+    -webkit-text-stroke: 4px $color-title;
+    z-index: -1;
+  }
+}
+
+// footer
+
+footer {
+  background: $color-menu;
+}
+
+.social_media {
+  padding: 20px;
+}
+
+.social_item {
+  margin: 0 20px;
+}
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: $color-basic;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.privacy,
+.copyright {
+  padding: 30px 0 10px 30px;
+}

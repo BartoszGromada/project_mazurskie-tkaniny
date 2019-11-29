@@ -1,0 +1,173 @@
+@media (max-width: 767px) {
+
+  // Global
+
+  body {
+    font-size: 14px;
+  }
+
+  .section_title {
+    font-size: 24px;
+
+    &::after {
+      height: 2px;
+      bottom: -10px;
+      width: 60px;
+    }
+  }
+
+  // BACKGROUND
+
+  .background {
+    height: 200px;
+    margin: 10px 0 20px 0;
+  }
+
+  // Navigation
+
+  .logo {
+    height: 200px;
+    width: 200px;
+    border: 2px solid $color-title;
+  }
+
+  .page_title {
+    font-size: 26px;
+  }
+
+  .stroke {
+    &::before {
+      -webkit-text-stroke: 3px $color-title;
+    }
+  }
+
+  .page_subtitle {
+    font-size: 18px;
+  }
+  
+  .nav_menu {
+    height: 230px;
+  }
+
+  .list_menu {
+    padding-top: 135px;
+  }
+
+  .menu_item {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+
+  .menu_item a {
+    font-size: 20px;
+
+    &:hover::after {
+      bottom: -2px;
+    }
+    
+    &.active::after{
+      bottom: -2px;
+    }
+  }
+
+  // Splash
+
+  .splash_image {
+    height: 300px;
+  }
+
+  .splash_image h2:first-child {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .splash_image h2 {
+    font-size: 20px;
+  }
+
+  .stroke_two {
+    &::before {
+      -webkit-text-stroke: 3px $color-title;
+    }
+  }
+
+  .stroke_three {
+    &::before {
+      -webkit-text-stroke: 3px $color-title;
+      left: 0;
+    }
+  }
+
+  // Contact
+  
+  .data {
+    flex: 0 0 100%;
+  }
+
+  .data_description {
+    padding: 25px 10px 0 15px;
+    font-size: 14px;
+  }
+
+  .form {
+    flex: 0 0 100%;
+  }
+
+  .input {
+    flex: 0 0 100%;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 6px;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  button {
+    margin: 15px auto;
+  }
+
+  .margin {
+    margin: 0 auto;
+  }
+
+  // Orders 
+
+  .order {
+    flex: 0 0 100%;
+    margin-top: 5px;
+  }
+
+  // Gallery 
+
+  .gallery_card {
+    flex: 0 0 100%;
+  }
+
+  // Footer
+
+  .copyright {
+    flex: 0 0 50%;
+  }
+
+  .privacy {
+    flex: 0 0 50%;
+  }
+
+  .social_media {
+    flex: 0 0 100%;
+    text-align: center;
+    order: -1;
+  }
+
+  .social_item {
+    margin: 0 10px;
+  }
+
+}

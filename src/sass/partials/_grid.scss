@@ -1,0 +1,33 @@
+.row,
+.navigation,
+.splash,
+.posts,
+footer,
+.list_menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.six {
+  flex: 0 0 60%;
+}
+
+.three {
+  flex: 0 0 33.33%;
+}
+
+.three_second {
+  flex: 0 0 33%;
+}
+
+.four {
+  flex: 0 0 40%;
+}
+
+.two {
+  flex: 0 0 50%;
+}
+
+.one {
+  flex: 0 0 100%;
+}

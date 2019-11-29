@@ -1,0 +1,49 @@
+.background_one {
+  background: url("../images/background_1_optimized.jpg");
+}
+
+.background_two {
+  background: url("../images/background_2_optimized.jpg");
+}
+
+.background_three {
+  background: url("../images/background_3_optimized.jpg");
+}
+
+.background_four {
+  background: url("../images/background_4_optimized.jpg");
+}
+
+.background_five {
+  background: url("../images/background_5_optimized.jpg");
+}
+
+.background_six {
+  background: url("../images/background_6_optimized.jpg");
+}
+
+.background_seven {
+  background: url("../images/background_7_optimized.jpg");
+}
+
+.background_eight {
+  background: url("../images/background_8_optimized.jpg");
+}
+
+.background_nine {
+  background: url("../images/background_9_optimized.jpg");
+}
+
+.background_ten {
+  background: url("../images/background_10_optimized.jpg");
+}
+
+.background {
+  background-position: no-repeat center top;
+  background-size: 100%;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 40px 0 50px 0;
+}

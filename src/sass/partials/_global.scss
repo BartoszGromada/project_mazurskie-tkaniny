@@ -1,0 +1,145 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: $font-basic;
+  color: $color-title;
+}
+
+.container {
+  width: calc(100vw - 18px);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.post {
+  opacity: 0;
+  transition: 1s linear;
+
+  &.active {
+    opacity: 100;
+  }
+
+  &.deactive {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.section_title {
+  font-size: 36px;
+  color: $color-title;
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-family: $font-header;
+  letter-spacing: 3px;
+  position: relative;
+
+  &::after {
+    @include center_tier;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: $color-title;
+    border-radius: 25px;
+    bottom: -20px;
+  }
+}
+
+.article_title {
+  font-family: $font-header;
+  font-size: 24px;
+  color: $color-title;
+  margin: 20px 0 30px 0;
+  text-transform: uppercase;
+  font-family: $font-header;
+  letter-spacing: 2px;
+}
+
+.description {
+  padding: 20px;
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+span {
+  font-weight: 700;
+}
+
+.linear {
+  position: relative;
+  margin-bottom: 40px;
+
+  &::after {
+    @include center_tier;
+    display: block;
+    content: "";
+    width: 40%;
+    height: 2px;
+    opacity: 80;
+    border-radius: 25px;
+    bottom: -10px;
+  }
+}
+
+.linear_one {
+  &::after {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(63, 70, 82, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}
+
+.linear_two {
+  &::after {
+    background: rgb(210, 179, 130);
+    background: linear-gradient(
+      90deg,
+      rgba(210, 179, 130, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(210, 179, 130, 1) 100%
+    );
+  }
+}
+
+.list_item {
+  display: inline;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $font-header;
+  color: $color-title;
+}
+
+i {
+  color: $color-title;
+}
+
+.space {
+  justify-content: space-between;
+}
