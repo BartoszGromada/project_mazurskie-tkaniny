@@ -1,4 +1,30 @@
-import {select, className} from './settings.js';
+/* eslint-disable linebreak-style */
+
+const select = {
+  all: {
+    section: '.info',
+    activeSection: '.post.active',
+    activeLinks: '.menu_item a.active',
+  },
+  listOf: {
+    menuItem: '.menu_item a',
+  },
+  data: {
+    section: 'data-section',
+    background: 'data-background',
+  },
+  splash: '.splash_image',
+};
+
+const className = {
+  active: 'active',
+  deactive: 'deactive',
+  splash: {
+    one: 'splash_one',
+    two: 'splash_two',
+    three: 'splash_three',
+  }
+};
 
 function addClickListenersToMenu() {
   const menuItems = document.querySelectorAll(select.listOf.menuItem);
