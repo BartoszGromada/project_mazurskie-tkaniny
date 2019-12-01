@@ -169,5 +169,17 @@
   .social_item {
     margin: 0 10px;
   }
-
 }
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .stroke_three {
+    &::before {
+      -webkit-text-stroke: 3px $color-title;
+      left: inherit;
+    }
+  }
+}
+
+
+
+
