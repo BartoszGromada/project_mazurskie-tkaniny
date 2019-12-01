@@ -180,6 +180,11 @@
   }
 }
 
-
-
-
+@media (max-width: 1024px) and (orientation: portrait) {
+  .stroke_three {
+    &::before {
+      -webkit-text-stroke: 3px $color-title;
+      left: 0;
+    }
+  }
+}
