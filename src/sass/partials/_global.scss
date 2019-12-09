@@ -143,3 +143,17 @@ i {
 .space {
   justify-content: space-between;
 }
+
+.stroke {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    content: attr(content);
+    -webkit-text-stroke: 4px $color-title;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+  }
+}
