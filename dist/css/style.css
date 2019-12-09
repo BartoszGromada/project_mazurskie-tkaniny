@@ -145,7 +145,7 @@ i {
 
 .stroke::before {
   position: absolute;
-  content: attr(content);
+  content: attr(data-content);
   -webkit-text-stroke: 4px #3f4652;
   z-index: -1;
   left: 0;
@@ -433,7 +433,6 @@ footer {
 .order {
   background-color: #d2b382;
   color: #fff;
-  text-align: center;
 }
 
 .order_margin {
