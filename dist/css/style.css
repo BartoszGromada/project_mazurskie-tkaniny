@@ -145,7 +145,7 @@ i {
 
 .stroke::before {
   position: absolute;
-  content: attr(data-content);
+  content: attr(content);
   -webkit-text-stroke: 4px #3f4652;
   z-index: -1;
   left: 0;
@@ -156,7 +156,7 @@ i {
 .navigation,
 .splash,
 .posts,
-footer,
+.footer,
 .list_menu {
   display: -ms-flexbox;
   display: flex;
@@ -274,6 +274,19 @@ footer,
   letter-spacing: 3px;
 }
 
+.stroke {
+  position: relative;
+  z-index: 0;
+}
+
+.stroke::before {
+  position: absolute;
+  content: attr(data-content);
+  -webkit-text-stroke: 4px #3f4652;
+  left: 0;
+  z-index: -1;
+}
+
 .page_subtitle {
   position: absolute;
   left: 50%;
@@ -366,6 +379,20 @@ footer,
   margin-bottom: 50px;
 }
 
+.stroke_two,
+.stroke_three {
+  position: relative;
+  z-index: 0;
+}
+
+.stroke_two::before,
+.stroke_three::before {
+  position: absolute;
+  content: attr(data-content);
+  -webkit-text-stroke: 4px #3f4652;
+  z-index: -1;
+}
+
 footer {
   background: #b6c4cd;
 }
@@ -433,6 +460,7 @@ footer {
 .order {
   background-color: #d2b382;
   color: #fff;
+  text-align: center;
 }
 
 .order_margin {
