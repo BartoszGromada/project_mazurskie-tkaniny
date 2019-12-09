@@ -433,6 +433,7 @@ footer {
 .order {
   background-color: #d2b382;
   color: #fff;
+  text-align: center;
 }
 
 .order_margin {
@@ -673,15 +674,6 @@ button:hover {
   }
   .margin {
     margin: 0 auto;
-  }
-  .order {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-    margin-top: 5px;
-  }
-  .gallery_card {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
   }
   .copyright {
     -ms-flex: 0 0 50%;
