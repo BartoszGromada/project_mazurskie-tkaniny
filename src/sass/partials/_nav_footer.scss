@@ -34,7 +34,7 @@
 
   &::before {
     position: absolute;
-    content: attr(content);
+    content: attr(data-content);
     -webkit-text-stroke: 4px $color-title;
     left: 0;
     z-index: -1;
@@ -125,7 +125,7 @@
   
   &::before {
     position: absolute;
-    content: attr(content);
+    content: attr(data-content);
     -webkit-text-stroke: 4px $color-title;
     z-index: -1;
   }
