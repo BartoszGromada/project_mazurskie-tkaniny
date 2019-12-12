@@ -505,6 +505,7 @@ input {
   padding: 5px;
   width: 90%;
   font-size: 12px;
+  outline: none;
 }
 
 input:focus {
@@ -516,6 +517,8 @@ textarea {
   padding: 5px;
   width: 95%;
   height: 100px;
+  resize: none;
+  outline: none;
 }
 
 textarea:focus {
