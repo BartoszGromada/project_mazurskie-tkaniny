@@ -81,10 +81,6 @@ function activeClass(event) {
   }
 
   splash.classList.add(background);
-  
-  const top = document.querySelector(select.body);
-  console.log(top);
-  top.animate({scrollTop:0}, '300');
 }
 
 addClickListeners();
