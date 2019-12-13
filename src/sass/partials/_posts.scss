@@ -45,6 +45,7 @@
 .order {
   background-color: $color-alternative;
   color: $color-basic;
+  text-align: center;
 }
 
 .order_margin {
@@ -91,6 +92,7 @@ input {
   padding: 5px;
   width: 90%;
   font-size: 12px;
+  outline: none;
 
   &:focus {
     border: 2px solid $color-title;
@@ -102,6 +104,8 @@ textarea {
   padding: 5px;
   width: 95%;
   height: 100px;
+  resize: none;
+  outline: none;
 
   &:focus {
     border: 2px solid $color-title;
