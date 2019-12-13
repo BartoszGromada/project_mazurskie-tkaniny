@@ -8,12 +8,14 @@ const select = {
   },
   listOf: {
     menuItem: '.menu_item a',
+    textLinks: '.textlink a',
   },
   data: {
     section: 'data-section',
     background: 'data-background',
   },
   splash: '.splash_image',
+  body: 'html, body',
 };
 
 const className = {
@@ -26,10 +28,16 @@ const className = {
   }
 };
 
-function addClickListenersToMenu() {
+function addClickListeners() {
   const menuItems = document.querySelectorAll(select.listOf.menuItem);
+  const textLinks = document.querySelectorAll(select.listOf.textLinks);
+
   for (let item of menuItems) {
     item.addEventListener('click', activeClass);
+  }
+
+  for (let link of textLinks) {
+    link.addEventListener('click', activeClass);
   }
 }
 
@@ -73,6 +81,10 @@ function activeClass(event) {
   }
 
   splash.classList.add(background);
+  
+  const top = document.querySelector(select.body);
+  console.log(top);
+  top.animate({scrollTop:0}, '300');
 }
 
-addClickListenersToMenu();
+addClickListeners();
