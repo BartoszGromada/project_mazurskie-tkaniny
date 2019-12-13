@@ -15,7 +15,6 @@ const select = {
     background: 'data-background',
   },
   splash: '.splash_image',
-  body: 'html, body',
 };
 
 const className = {
@@ -28,9 +27,10 @@ const className = {
   }
 };
 
+const menuItems = document.querySelectorAll(select.listOf.menuItem);
+const textLinks = document.querySelectorAll(select.listOf.textLinks);
+
 function addClickListeners() {
-  const menuItems = document.querySelectorAll(select.listOf.menuItem);
-  const textLinks = document.querySelectorAll(select.listOf.textLinks);
 
   for (let item of menuItems) {
     item.addEventListener('click', activeClass);
@@ -42,10 +42,9 @@ function addClickListeners() {
 }
 
 function activeClass(event) {
-  event.preventDefault();
   const clickedElement = event.target;
   const section = clickedElement.getAttribute(select.data.section);
-  const background = clickedElement.getAttribute(select.data.background);
+  const checkBackground = clickedElement.getAttribute(select.data.background);
   const sectionArray = section.split(' ');
   const activeSections = document.querySelectorAll(select.all.activeSection);
   const activeLinks = document.querySelectorAll(select.all.activeLinks);
@@ -68,19 +67,20 @@ function activeClass(event) {
     link.classList.remove(className.active);
   }
 
-  clickedElement.classList.add(className.active);
-
-  if (background === className.splash.one) {
+  if (checkBackground === className.splash.one) {
     splash.classList.remove(className.splash.two, className.splash.three);
+    menuItems[0].classList.add(className.active);
   }
-  if (background === className.splash.two) {
+  if (checkBackground === className.splash.two) {
     splash.classList.remove(className.splash.one, className.splash.three);
+    menuItems[1].classList.add(className.active);
   }
-  if (background === className.splash.three) {
+  if (checkBackground === className.splash.three) {
     splash.classList.remove(className.splash.one, className.splash.two);
+    menuItems[2].classList.add(className.active);
   }
 
-  splash.classList.add(background);
+  splash.classList.add(checkBackground);
 }
 
 addClickListeners();
