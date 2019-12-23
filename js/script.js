@@ -7,7 +7,7 @@ const select = {
     activeLinks: '.menu_item a.active',
   },
   listOf: {
-    menuItem: '.menu_item a',
+    menuElement: '.list-menu a',
     textLinks: '.textlink a',
   },
   data: {
