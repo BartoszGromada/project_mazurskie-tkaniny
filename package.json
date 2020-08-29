@@ -37,6 +37,7 @@
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
     "copyfiles": "^2.1.0",
+    "dot-prop": "^5.2.0",
     "eslint": "^5.14.1",
     "globstar": "^1.0.0",
     "jshint": "^2.10.2",
